@@ -11,7 +11,7 @@ def play_game():
             user_word = input("Enter your guess: ").lower()
             result = match_words(user_word, guess_word)
             if result == 1:
-                print("Congratulations! You guess is correct!!")
+                print("Congratulations! Your guess is correct!!")
                 break
             else:
                 print("Computer says: ",result)
