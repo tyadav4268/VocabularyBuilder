@@ -1,10 +1,10 @@
 from gameInit import get_num_attempts, play_again
-from gameResources import getRandomWordMeaning, match_words
+from gameResources import get_random_word_meaning, match_words
 
-def playGame():
+def play_game():
     while True:
         num_attempts = get_num_attempts()
-        guess_word, meaning = getRandomWordMeaning()
+        guess_word, meaning = get_random_word_meaning()
         print("The meaning of word is: ",meaning)
         print("Guess the word")
         while num_attempts > 0:

@@ -2,7 +2,7 @@ import random
 
 fileName = "dict.txt"
 
-def getRandomWordMeaning():
+def get_random_word_meaning():
     '''returns a tuple of a random word and its meaning'''
     totalWords = 0
     currentData = None
@@ -15,7 +15,7 @@ def getRandomWordMeaning():
     word = wordMeaning[0]
     meaning = wordMeaning[1]
     return word, meaning
-# print(getRandomWordMeaning())
+# print(get_random_word_meaning())
 
 def game_hint(guess_word):
     return f"Hint: Length of the word is {len(guess_word)} "
