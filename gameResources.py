@@ -15,12 +15,12 @@ def get_random_word_meaning():
     word = wordMeaning[0]
     meaning = wordMeaning[1]
     return word, meaning
-# print(get_random_word_meaning())
+
 
 def game_hint(guess_word):
     return f"Hint: Length of the word is {len(guess_word)} "
 
-# print(game_hint("guess"))
+
 
 def match_words(user_word, guess_word):
     if user_word.lower() == guess_word.lower():
@@ -40,5 +40,8 @@ def match_words(user_word, guess_word):
         print(game_hint(guess_word))
         return "Length of your guess word is greater than original word! "
 
-
-# print(match_words("fanmilyofsnakes", "fanmily"))
+if __name__ == '__main__':
+    my_word = get_random_word_meaning()
+    print("Word: ", my_word[0])
+    print("Meaning: ", my_word[1])
+    print(match_words("fanmilyofsnakes", my_word[0]))
