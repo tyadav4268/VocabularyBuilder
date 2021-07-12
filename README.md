@@ -21,4 +21,6 @@
     
 - **dict.txt**: 
   - This is a text file which contains a word and its meaning separated by a **comma(',')** in each line.
+
+Image ![image of the running vocabBuilder](https://github.com/tyadav4268/VocabularyBuilder/blob/master/vocabBuilder.JPG "VocabBuilder")
 ---
